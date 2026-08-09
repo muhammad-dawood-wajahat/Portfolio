@@ -678,7 +678,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;
      and keeps proportions consistent from small phones to tablets */
   .pstage{
     position:relative;
-    width:clamp(210px,calc(118px + 28vw),330px);
+    width:clamp(230px,calc(130px + 30vw),350px);
     height:auto;
     aspect-ratio:3/4;
     margin:0 auto;
@@ -692,15 +692,16 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;
     animation:photoGlow 4s ease-in-out infinite;
   }
   .pphoto img{
-    object-position:center 10%;
+    object-position:center 8%;
   }
 
-  /* Floating badges — fluid sizing, always proportional to the photo */
+  /* Floating badges — fluid sizing, pushed further outside the photo
+     so the face stays fully clear and unobstructed */
   .bavail{top:clamp(4px,1vw,10px);left:auto;right:clamp(-16px,-1.6vw,-6px);
     padding:clamp(7px,1.6vw,10px) clamp(10px,2.4vw,15px);gap:clamp(6px,1vw,8px)}
   .albl{font-size:clamp(10px,1.8vw,13px)}
 
-  .bexp{top:clamp(46px,10vw,80px);left:clamp(-20px,-2vw,-10px);
+  .bexp{top:clamp(40px,9vw,76px);left:clamp(-70px,-16vw,-18px);
     padding:clamp(8px,1.8vw,13px) clamp(10px,2.2vw,16px)}
   .bev{font-size:clamp(11px,2vw,15px)}
   .bes{font-size:clamp(8px,1.4vw,11px)}
